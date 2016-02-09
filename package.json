@@ -1,0 +1,21 @@
+{
+  "name": "django-template",
+  "version": "1.0.0",
+  "description": "Django template",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ingemar (iingemar@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^5.3.2",
+    "backbone": "^1.2.3",
+    "css-loader": "^0.18.0",
+    "jquery": "^2.1.4",
+    "style-loader": "^0.12.4",
+    "underscore": "^1.8.3",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  }
+}

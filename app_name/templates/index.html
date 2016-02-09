@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Cafe Dello Sport</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <hr class="vertical-space vertical-space-4">
+                <div class="divider">
+                    <i class="flaticon flaticon-noodle"></i>
+                    <h3>Meny</h3>
+                </div>
+                <hr class="vertical-space vertical-space-3">
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="title">
+                        <h3>Pizza</h3>
+                    </div>
+                    <div class="menu">
+                    {% for food in foods %}
+                        <div class="menu-item">
+                            <div class="top">
+                                <span class="name">{{ food.name }}</span>
+                                <span class="price">{{ food.price }} kr</span>
+                            </div>
+                            <div class="description">{{ food.get_ingredients }}</div>
+                        </div>
+                    {% endfor %}
+                    <hr class="vertical-space vertical-space2">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="vertical-space vertical-space-4">
+        </div>
+    </div>
+{% endblock %}
