@@ -1,7 +1,7 @@
 {
-  "name": "django-template",
+  "name": "Dellos",
   "version": "1.0.0",
-  "description": "Django template",
+  "description": "Dellos",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
