@@ -16,15 +16,37 @@ h1 {
     border: 0 none;
     height: 20px;
 }
-.vertical-space-4 {
-    height: 80px;
+.vertical-space-2 {
+    height: 40px;
 }
 .vertical-space-3 {
     height: 60px;
 }
-.vertical-space-2 {
-    height: 40px;
+.vertical-space-4 {
+    height: 80px;
 }
+
+@media only screen and (max-width: 960px) {
+    .vertical-space,
+    .vertical-space1 {
+        height: 12px;
+    }
+    .vertical-space2 {
+        height: 18px;
+    }
+    .vertical-space3 {
+        height: 36px;
+    }
+    .vertical-space4 {
+        height: 50px;
+    }
+    .vertical-space5 {
+        height: 80px;
+    }
+}
+
+
+
 .menu-container {
     background: url('/static/images/lightpaperfibers.png') repeat;
     background-position: center center;
