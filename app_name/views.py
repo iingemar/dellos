@@ -1,12 +1,14 @@
 from django.shortcuts import render_to_response
-from django.shortcuts import render
 from models import Food
 
 
 def index(request):
-    foods = Food.objects.filter(category__name='Pizza').prefetch_related('ingredients').all().order_by('index')
+    all_foods = Food.objects.prefetch_related('ingredients').all().order_by('index')
+    pizzas = all_foods.filter(category__name='Pizza')
+    pastas = all_foods.filter(category__name='Pasta')
     context = {
-        'foods': foods
+        'pizzas': pizzas,
+        'pastas': pastas
     }
 
     return render_to_response('index.html', context)
