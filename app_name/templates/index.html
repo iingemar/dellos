@@ -10,26 +10,46 @@
     </div>
 
     <div class="menu-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <hr class="vertical-space vertical-space-4">
-                <div class="divider">
-                    <i class="flaticon flaticon-noodle"></i>
-                    <h3>Meny</h3>
-                </div>
-                <hr class="vertical-space vertical-space-3">
-            </div>
-
+        <div class="container">
             <div class="row">
-                {% include "includes/menu.html" with header="Pizza" foods=pizzas %}
-                {% include "includes/menu.html" with header="Panini" foods=pizzas %}
-                {% include "includes/menu.html" with header="Pizza #3" foods=pizzas %}
-                {% include "includes/menu.html" with header="Pasta" foods=pastas %}
-                {% include "includes/menu.html" with header="Panini" foods=pastas %}
-            </div>
+                <div class="col-xs-12">
+                    <hr class="vertical-space vertical-space-4">
+                    <div class="divider">
+                        <h3>Meny</h3>
+                    </div>
+                    <hr class="vertical-space vertical-space-3">
+                </div>
 
-            <hr class="vertical-space vertical-space-4">
+                <div class="row">
+                    {% include "includes/menu.html" with header="Pizza" foods=pizzas %}
+                    {% include "includes/menu.html" with header="Pasta" foods=pastas %}
+                    {% include "includes/menu.html" with header="Panini" foods=pastas %}
+                </div>
+
+                <hr class="vertical-space vertical-space-4">
+            </div>
+        </div>
+    </div>
+
+    <div class="white-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr class="vertical-space vertical-space-4">
+                    <div class="divider">
+                        <h3>Karta</h3>
+                    </div>
+                    <hr class="vertical-space vertical-space-3">
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <p>apa</p>
+                    </div>
+                </div>
+
+                <hr class="vertical-space vertical-space-4">
+            </div>
         </div>
     </div>
 {% endblock %}
