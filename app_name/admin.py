@@ -1,5 +1,4 @@
 from django.contrib import admin
-
 from models import Ingredient, Food, FoodCategory
 
 
@@ -20,7 +19,6 @@ class FoodAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
     list_editable = ('index',)
     search_fields = ['name']
-
 
 
 admin.site.register(Food, FoodAdmin)
